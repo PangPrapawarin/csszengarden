@@ -1,0 +1,132 @@
+$primary-color: #fff1c5;
+$second-color: #fac375;
+$third-color: #fc9f66;
+$fourth-color: #ffcfcb;
+$body-font-color: black;
+$highlight-font-color: #9c9c9c;
+@font-face {
+    font-family: ZenLoop;
+    src: url(sass/ZenLoop-Regular.ttf);
+}
+
+@media screen {
+    .main.supporting,
+    .sidebar {
+        width: 100%;
+    }
+}
+
+body {
+    background-color: $primary-color;
+    font-family: ZenLoop, monospace;
+    font-size: 1.5em;
+    color: $body-font-color;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.preamble,
+footer {
+    margin-top: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    background-color: $fourth-color;
+    width: fit-content;
+    height: fit-content;
+}
+
+.main.supporting {
+    float: left;
+    width: 70%;
+}
+
+.sidebar {
+    float: left;
+    width: 30%;
+}
+
+abbr {
+    text-decoration: none;
+    color: $highlight-font-color;
+    font-weight: bold;
+}
+
+section.intro,
+footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer {
+    margin-bottom: 5%;
+}
+
+h1 {
+    color: #5e3200;
+    font-weight: bold;
+    font-size: 4em;
+    margin-bottom: 0%;
+}
+
+h3 {
+    color: rgb(68, 21, 21);
+    font-style: italic;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: underline 1px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #5f936a;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: #a8d4e9;
+}
+
+div.explanation,
+div.participation,
+div.benefits,
+div.requirements,
+aside.sidebar {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    background-color: $second-color;
+    width: fit-content;
+    height: fit-content;
+}
+
+aside.sidebar {
+    background-color: $third-color;
+}
+
+ul {
+    list-style-type: circle;
+}
